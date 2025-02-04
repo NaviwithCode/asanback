@@ -50,18 +50,18 @@ app.use('/api/v1/order',orderRouter)
 // app.use("/api/v1/order",orderRouter)
 
 // rest api
-// app.get("/", (req, res) => {
-//   res.send({
-//     message: "welcome to mva group",
-//   });
-// });
+app.get("/", (req, res) => {
+  res.send({
+    message: "welcome to mva group",
+  });
+});
 // app.use("*",function(req,res){
 //   res.sendFile(path.join(__dirname,"./client/build/index.html"))
 // })
-const __dirname=path.dirname("")
-const buildpath = path.join(__dirname,"../client/build")
-app.use(express.static(buildpath))
-app.use(cors({"origin":"*"}))
+// const __dirname=path.dirname("")
+// const buildpath = path.join(__dirname,"../client/build")
+// app.use(express.static(buildpath))
+// app.use(cors({"origin":"*"}))
 // port
 const PORT = process.env.PORT || 8000;
 
